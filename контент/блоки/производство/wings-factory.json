@@ -1,0 +1,60 @@
+{
+  "type": "GenericCrafter",
+  "name": "wings factory",
+  "description": "a factory producing special wings for the production of new units of the  [red]type C1.",
+  "outputItem": {
+    "item": "flying-wings",
+    "amount": 1
+  },
+     "drawer": {
+    "type": "DrawMulti",
+    "drawers": [
+      {
+        "type": "DrawDefault" 
+      }
+      {
+        "type": "DrawGlowRegion",
+        "suffix": "-top",
+        "color": "f1a397"
+      },
+    ]
+  },
+  "health": 440,
+  "craftTime": 180,
+  "size": 2,
+  "hasPower": true,
+  "hasLiquids": false,
+  "hasItems": true,
+  "updateEffect":"none",
+  "consumes": {
+    "power": 1,
+       "items": {
+      "items": [
+          {
+"item": "titanium",
+          "amount": 2 
+},  
+ { "item": "copper"
+          "amount": 3
+},
+      ]
+    }
+  },
+  "requirements":
+[
+    {
+      "item": "lead",
+      "amount": 200
+    },
+    {
+      "item": "graphite",
+      "amount": 75
+    },
+    {
+      "item": "silicon",
+      "amount": 75
+    },
+  ],
+  "category": "crafting",
+  "research": "team-elecian",
+}
